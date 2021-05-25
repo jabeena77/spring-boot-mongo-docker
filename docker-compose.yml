@@ -14,7 +14,7 @@ services:
     - mongodb:/data/db
     restart: always
     networks:
-    - springappnetwork
+    - springappcustombridge
 volumes:
   mongodb:
     driver: local
