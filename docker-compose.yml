@@ -1,5 +1,4 @@
 version: '3.1'
-
 services:
   springboot:
     image: jabdockerpro/spring-boot-mongo:1
@@ -23,9 +22,9 @@ services:
     restart: always
     networks:
     - springappnetwork
- volumes:
-   mongodb:
-     driver: local
- networks:
-   springappcustombridge
+volumes:
+  mongodb:
+    driver: local
+networks:
+  springappcustombridge
   
